@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 头部颜色 */
+.proHead  {font-family:"微软雅黑Light","Microsoft YaHei Light";font-size:36px;background:#FF0}
+
+/*图片横向滚动播放*/
+*{margin:0;padding:0;text-decoration:none;}
+body{padding-left:250px;}
+#container{width:780px;height:390px;overflow:hidden;position:relative;}
+#list{width:3900px;height:390px;position:absolute;z-index:1;}
+#list img{float:left;}
+#background{position:absolute;z-index:2;height:20px;width:100px;background-color: #FFFFFF;
+	opacity:0.5;filter:Alpha(opacity=50);border-radius:22%;bottom:15px;left:350px;}
+#buttons{position:absolute;z-index:300;height:10px;width:100px;bottom:20px;left:360px;}
+#buttons span{cursor:pointer;float:left;border:1px solid #666;width:10px;height:10px;
+	     	 border-radius:50%;margin-left:10px;background:#525252}	
+#buttons .on{background:orangered;}	
+.arrow{cursor:pointer;display:none;
+	  line-height:39px;text-align:center;
+	  font-size:38px;font-weight:400; 
+	  height:50px;width:30px;
+	  position:absolute;z-index:2;top:180px;
+	  background-color:RGBA(0,0,0,.3);
+	  color:RGBA(255,255,255,.5);}	
+.arrow:hover{background-color:RGBA(9,9,9,.2);}	
+#container:hover .arrow{display:block;}	
+#prev{left:20px;}	
+#next{right:20px;}
